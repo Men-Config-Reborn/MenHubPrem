@@ -10,8 +10,10 @@ local Folder_RivalsModded = Instance.new("Frame")
 local UIListLayout_2 = Instance.new("UIListLayout")
 local TrevModded = Instance.new("TextButton")
 local P2WModded = Instance.new("TextButton")
+local Q4yjsModded = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
 local UICorner_5 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
 local RightContent = Instance.new("Frame")
 local Icon = Instance.new("ImageLabel")
 local Loadbutton = Instance.new("TextButton")
@@ -152,6 +154,19 @@ TrevModded.TextColor3 = Color3.fromRGB(255, 255, 255)
 TrevModded.TextSize = 30.000
 TrevModded.TextWrapped = true
 
+Q4yjsModded.Parent = Folder_RivalsModded
+Q4yjsModded.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Q4yjsModded.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Q4yjsModded.BorderSizePixel = 0
+Q4yjsModded.Position = UDim2.new(0, 0, 0.735294104, 0)
+Q4yjsModded.Size = UDim2.new(0, 214, 0, 50)
+Q4yjsModded.AutoButtonColor = false
+Q4yjsModded.Font = Enum.Font.SourceSans
+Q4yjsModded.Text = "Q4yjs Modded"
+Q4yjsModded.TextColor3 = Color3.fromRGB(255, 255, 255)
+Q4yjsModded.TextSize = 30.000
+Q4yjsModded.TextWrapped = true
+
 P2WModded.Parent = Folder_RivalsModded
 P2WModded.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
 P2WModded.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -170,6 +185,9 @@ UICorner_3.Parent = TrevModded
 
 UICorner_5.CornerRadius = UDim.new(0, 16)
 UICorner_5.Parent = P2WModded
+
+UICorner_6.CornerRadius = UDim.new(0, 16)
+UICorner_6.Parent = Q4yjsModded
 
 RightContent.Name = "RightContent"
 RightContent.Parent = Menu
@@ -225,6 +243,10 @@ TrevModded.MouseButton1Click:Connect(function()
 	Seletectedscript = TrevModded.Text
 	Seletected.Text = "Seleceted Scripted: "..Seletectedscript
 end)
+Q4yjsModded.MouseButton1Click:Connect(function()
+	Seletectedscript = Q4yjsModded.Text
+	Seletected.Text = "Seleceted Scripted: "..Seletectedscript
+end)
 P2WModded.MouseButton1Click:Connect(function()
 	Seletectedscript = P2WModded.Text
 	Seletected.Text = "Seleceted Scripted: "..Seletectedscript
@@ -252,6 +274,7 @@ end)
 
 local database = {
 	["Trev Modded"] = "loadstring(game:HttpGet('https://raw.githubusercontent.com/men-cofing-roblox/MenHubPrem/main/Scripts/TrevModded.luau'))()",
+	["Q4yjs Modded"] = "loadstring(game:HttpGet('https://raw.githubusercontent.com/men-cofing-roblox/MenHubPrem/main/Scripts/Q4yjsModded.luau'))()",
 	["P2W Modded"] = "game:GetService('Players').LocalPlayer:Kick('Soon')"
 }
 
