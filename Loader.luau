@@ -175,7 +175,7 @@ P2WModded.Position = UDim2.new(0, 0, 0.735294104, 0)
 P2WModded.Size = UDim2.new(0, 214, 0, 50)
 P2WModded.AutoButtonColor = false
 P2WModded.Font = Enum.Font.SourceSans
-P2WModded.Text = "P2W Modded"
+P2WModded.Text = "Adrian Modded"
 P2WModded.TextColor3 = Color3.fromRGB(255, 255, 255)
 P2WModded.TextSize = 30.000
 P2WModded.TextWrapped = true
@@ -275,7 +275,7 @@ end)
 local database = {
 	["Trev Modded"] = "loadstring(game:HttpGet('https://raw.githubusercontent.com/men-cofing-roblox/MenHubPrem/main/Scripts/TrevModded.luau'))()",
 	["Q4yjs Modded"] = "loadstring(game:HttpGet('https://raw.githubusercontent.com/men-cofing-roblox/MenHubPrem/main/Scripts/Q4yjsModded.luau'))()",
-	["P2W Modded"] = "game:GetService('Players').LocalPlayer:Kick('Soon')"
+	["Adrian Modded"] = "loadstring(game:HttpGet('https://raw.githubusercontent.com/Men-Config-Reborn/MenHubPrem/main/Scripts/AdrianModded.luau'))()"
 }
 
 Loadbutton.MouseButton1Click:Connect(function()
